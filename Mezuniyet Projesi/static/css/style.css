@@ -184,6 +184,21 @@ body{
     font-size: 18px;
     margin: 20px;
     text-shadow: #8c8c8c -2px 2px 5px;
+    
+}
+.albaslik3{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 24px;
+    color: #0A9F9D;
+    margin-left: 15px;
+    margin-right: auto;
+    text-shadow: #0A9F9D -2px 2px 5px;
+}
+.icerikler{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    text-shadow: #8c8c8c -2px 2px 5px;
 }
 
 
@@ -212,4 +227,7 @@ body{
     height: 200px;
     padding: 10px;
     background-color: #cafbfb;
+}
+.link1{
+    margin-top: 10px;
 }
