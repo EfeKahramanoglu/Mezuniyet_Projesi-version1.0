@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonuç</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(180deg,#AFD6D7 0% ,rgba(37, 246, 0, 0.603) 100%);
+            margin: 0;
+        }
+        .result-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .result-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .result-container h2 {
+            margin: 20px 0;
+        }
+        .result-container p {
+            font-size: 18px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result-container">
+    <h2>Görsel Analiz Sonucu</h2>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Yüklenen Görsel">
+    <p><strong>Sınıf:</strong> {{ class_name }}</p>
+    <p><strong>Güven Skoru:</strong> {{ confidence * 100 | round(2) }}%</p>
+    <a href="/" class="button"><button>Yeni Görsel Yükle</button></a>
+</div>
+
+</body>
+</html>

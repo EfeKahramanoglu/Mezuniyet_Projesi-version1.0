@@ -1,0 +1,5 @@
+0 kagit
+1 karton
+2 plastik
+3 Cam
+4 Elektronik Atik
